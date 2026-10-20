@@ -1,12 +1,12 @@
 def menu():
     print("\n--- MENU DE OPERAÇÕES ---")
-    print("1: Criar uma turma[cite: 1]")
-    print("2: Inserir um aluno na turma[cite: 1]")
-    print("3: Listar a turma[cite: 1]")
-    print("4: Consultar um aluno por id[cite: 1]")
-    print("8: Guardar a turma em ficheiro[cite: 1]")
-    print("9: Carregar uma turma dum ficheiro[cite: 1]")
-    print("0: Sair da aplicação[cite: 1]")
+    print("1: Criar uma turma")
+    print("2: Inserir um aluno na turma")
+    print("3: Listar a turma")
+    print("4: Consultar um aluno por id")
+    print("8: Guardar a turma em ficheiro")
+    print("9: Carregar uma turma dum ficheiro")
+    print("0: Sair da aplicação")
 
 def main():
     turma = []  
@@ -53,7 +53,7 @@ def main():
                 
         elif opcao == "8":
             nome_ficheiro = input("Nome do ficheiro para guardar: ")
-            ficheiro = open(nome_ficheiro, "w", encoding="utf-8")
+            ficheiro = open(nome_ficheiro, "w")
             i = 0
             while i < len(turma):
                 aluno = turma[i]
@@ -65,7 +65,7 @@ def main():
             
         elif opcao == "9":
             nome_ficheiro = input("Nome do ficheiro para carregar: ")
-            ficheiro = open(nome_ficheiro, "r", encoding="utf-8")
+            ficheiro = open(nome_ficheiro, "r")
             turma = []
             linhas = ficheiro.readlines()
             i = 0
