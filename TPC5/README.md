@@ -1,4 +1,4 @@
-# TPC 5 ##
+# TPC 4 ##
 Hugo Cuevas Castro Berlanga 
 A112174
 
@@ -7,6 +7,6 @@ A112174
 [def]: <Captura de ecrã 2026-09-22 201252.png>
 
 ## Resumo do Trabalho
-Criação de uma aplicação no python
+Criação de uma aplicação no python com várias opções 
 
-[Resolução do TPC5](TPC5.py)
+[Resolução do TPC4](TPC4.py)
